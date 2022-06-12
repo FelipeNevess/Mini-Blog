@@ -1,24 +1,39 @@
-# README
+# Mini Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Sobre
+Mini blog feito em ruby on rails, projeto com fins didático, com esse projeto é possivel criar GRUD e uma mini busca por postagens
 
-Things you may want to cover:
+```
+Rails versão 6.1.6
+Ruby versão 3
+```
 
-* Ruby version
+<br>
 
-* System dependencies
+### Instalações
+### Instale as dependências e devDependencies e inicie o servidor.
 
-* Configuration
+<br>
 
-* Database creation
+### Instalando as gems:
+```
+1 - bundle install
+```
+### Criando o banco de dados
+```
+2 - rails db:create
+```
+### Adicionando as migrations
+```
+3- rails db:migrate
+```
+### Populando o banco
+```
+4 - rails db:seed
+```
+### Iniciando a aplicação
+```
+5- rails s
+```
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
