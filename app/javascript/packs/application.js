@@ -9,5 +9,8 @@ import "channels"
 import "bootstrap/dist/js/bootstrap.bundle"
 import "../src/application.css"
 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 Rails.start()
 ActiveStorage.start()
