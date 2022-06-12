@@ -11,13 +11,19 @@
   </head>
 
   <body>
-    <div class="bg-dark text-white text-center mb-4 p-4">
-      <%= link_to root_path, class: 'text-white' do %>
-        <h1>Home Blog</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+      <div class="container-fluid mx-4">
+        <%= link_to root_path, class: 'text-white  navbar-brand' do %>
+          <h1 class="h5">HOME</h1>
+        <% end %>
+      </div>
+      <%= form_with url: search_posts_path, method: :get, local: true, class: "d-flex mx-4 w-50", role: "search" do |form| %>
+        <%= form.search_field :q, class: "form-control me-2", required: true, placeholder: "Buscar", value: params[:q] %>
+        <%= form.submit "Buscar", class: "btn btn-outline-success", data: { desable_with: "Buscando..." } %>
       <% end %>
-    </div>
+    </nav>
 
-    <div class='container'>
+    <div class='container' style="min-height: 100vh">
       <% flash.each do |type, message| %>
         <div
           class="alert alert-<%= type== 'alert' ? 'danger' : 'success'  %> alert-dismissible fade show"

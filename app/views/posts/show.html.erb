@@ -3,8 +3,9 @@
     <h1><%= @post.title %></h1>
 
     <p class="text-muted">
+      Por
       <strong>
-        Por <%= @post.author %>
+        <%= @post.author %>
       </strong>
       <%= l @post.created_at, format: :long %>
     </p>
@@ -34,12 +35,12 @@
 
       <div class="col-auto">
         <%= form.label :author, class: "form-label" %>
-        <%= form.text_field :author, class: "form-control" %>
+        <%= form.text_field :author, class: "form-control", required: true %>
       </div>
 
       <div class="col-auto">
         <%= form.label :body, class: "form-label" %>
-        <%= form.text_area :body, class: "form-control" %>
+        <%= form.text_area :body, class: "form-control", required: true %>
       </div>
 
       <%= form.submit "Enviar", class: "btn btn-primary mt-2", data: { disable_with: "Enviando..." } %>
