@@ -1,7 +1,7 @@
 # Mini Blog
 
 ## Sobre
-Mini blog feito em ruby on rails, projeto com fins didático, com esse projeto é possivel criar GRUD e uma mini busca por postagens
+Mini blog feito em Ruby on Rails, projeto com fins didático, com esse projeto é possivel criar GRUD, fazer comentários em posts e fazer uma mini busca por postagens
 
 ```
 Rails versão 6.1.6
