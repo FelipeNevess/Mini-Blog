@@ -7,6 +7,8 @@ gem 'rails', '~> 6.1.6'
 
 gem 'pg', '~> 1.1'
 
+gem 'net-smtp'
+
 gem 'puma', '~> 5.0'
 
 gem 'sass-rails', '>= 6'
@@ -24,7 +26,7 @@ gem 'friendly_id'
 gem 'pg_search'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do
@@ -44,4 +46,4 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
