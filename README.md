@@ -6,6 +6,7 @@ Mini blog feito em Ruby on Rails, projeto com fins didático, com esse projeto �
 ```
 Rails versão 6.1.6
 Ruby versão 3
+Bootstrap 5
 ```
 
 <br>
@@ -36,4 +37,6 @@ Ruby versão 3
 5- rails s
 ```
 
-
+![alt text](./image-1.PNG)
+![alt text](./image-2.PNG)
+![alt text](./image-3.PNG)
